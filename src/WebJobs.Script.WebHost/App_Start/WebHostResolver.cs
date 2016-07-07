@@ -174,7 +174,9 @@ namespace Microsoft.Azure.WebJobs.Script.WebHost
             };
 
             // If running on Azure Web App, derive the host ID from the site name
-            string hostId = _settingsManager.GetSetting(EnvironmentSettingNames.AzureWebsiteName);
+            // Otherwise, derive it from machine name and folder name
+            string hostId = _settingsManager.GetSetting(EnvironmentSettingNames.AzureWebsiteName)
+                ?? $"{Environment.MachineName}-{Path.GetFileName(Environment.CurrentDirectory)}";
             if (!String.IsNullOrEmpty(hostId))
             {
                 // Truncate to the max host name length if needed
