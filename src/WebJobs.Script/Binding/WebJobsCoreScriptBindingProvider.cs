@@ -119,7 +119,8 @@ namespace Microsoft.Azure.WebJobs.Script
 
                 attributes.Add(new HttpTriggerAttribute
                 {
-                    RouteTemplate = Context.GetMetadataValue<string>("route")
+                    RouteTemplate = Context.GetMetadataValue<string>("route"),
+                    IsProxy = Context.GetMetadataValue<bool>("isProxy")
                 });
 
                 return attributes;

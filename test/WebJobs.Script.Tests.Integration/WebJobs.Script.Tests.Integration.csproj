@@ -487,6 +487,9 @@
     <Compile Include="PowerShellEndToEndTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TestScripts\CSharp\ProxyHttpRequest\image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestScripts\Node\ApiHubTableEntityIn\index.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -601,6 +604,21 @@
     <Content Include="TestScripts\Python\TimeoutSync\run.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="TestScripts\CSharp\ProxyHttpRequest\function.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestScripts\CSharp\ProxyHttpRequest\run.csx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestScripts\CSharp\ProxyHttpResponse\function.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestScripts\CSharp\ProxyHttpResponse\response.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestScripts\CSharp\ProxyHttpResponse\run.csx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="TestScripts\DotNet\host.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

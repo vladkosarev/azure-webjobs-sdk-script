@@ -525,6 +525,9 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <Compile Include="Binding\Http\HttpContentJsonConverter.cs" />
+    <Compile Include="Binding\Http\HttpExtensions.cs" />
+    <Compile Include="Binding\Http\JsonResolver.cs" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
